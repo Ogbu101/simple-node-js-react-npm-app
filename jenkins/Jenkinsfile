@@ -3,7 +3,7 @@ pipeline {
         docker {
             // image 'node:lts-bullseye-slim'
             image 'node:16-bullseye'
-            args '-p 3000:3000'
+            args '-p 3000:3000 -u root:root' 
         }
     }
     environment {
